@@ -1,0 +1,128 @@
+.max_table .tr_head td{
+    font-weight: 700;
+}
+.public_input{ 
+	width:100px;
+}
+.pb100{ 
+	padding-bottom:100px;
+}
+/*
+地址栏修改
+*/
+
+.current{
+	margin:10px auto;
+	background:none;
+	border-bottom:0;
+}
+.gate_htitle{ 
+	height:80px;
+	line-height:40px;
+	text-align:center;
+	font-size:30px;
+	color:#64A2DB;
+}
+.page_content{
+	margin:0 auto;
+	padding-top:0;
+	box-shadow: 0 0 16px 4px rgba(191,191,191,0.35); 
+}
+.detailsBox{ 
+	border-left:0;
+}
+.details td, .details th{ 
+	border-right:0;
+	height:56px;
+}
+.details:after{ 
+	display:none;
+}
+.fun{ 
+	margin-right:0px;
+	height:60px;
+	border-bottom:0;
+}
+.min_table .tr_head td{ 
+	height:56px;
+	line-height:56px;
+	color:#289ff3;
+}
+.max_table .tr_head{ 
+	background:#e5f4ff;
+}
+.max_table{ 
+	width:100%;
+	min-width:inherit;
+}
+.gate_width14{ 
+	width:14.28%;
+}
+.gate_width60{ 
+	width:60px;
+}
+.gate_width80{ 
+	width:80px;
+}
+.gate_width100{ 
+	width:100px;
+}
+.gate_width140{ 
+	width:140px;
+}
+.details{
+	padding:0;
+	margin:0;
+}
+.fun>ul>li{ 
+	margin-top:5px;
+}
+/* 以上代码为修改继承样式*/
+
+/*固定*/
+.AirportFix1{ 
+	position:fixed;
+	top:0px;
+}
+.AirportFix2{ 
+	position:fixed;
+	top:60px;
+}
+.AirportFix3{ 
+	margin-top:117px;
+}
+
+/*通知公告的页面*/
+.noticeInfoTime{
+	margin:0 auto; 
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-bottom:solid 1px #ddd;
+}
+.noticeInfoTime .span2{ 
+	color:#f00;
+}
+.NoticeIn_content{ 
+	margin:30px auto 0;
+}
+.NoticeXZ a{ 
+	color:#4C8FBD;
+}
+.NoticeXZ li{ 
+	padding:5px 0;
+	padding-left:10px;
+	background:url(img/in_46.gif) no-repeat 0 center;
+}
+.NoticeXZ a:hover{ 
+	text-decoration:underline;
+}
+
+/*航段时间库的页面*/
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>民用航空预先飞行计划管理系统</title>
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="gate_index.css" rel="stylesheet" type="text/css">
+    <link href="AirportInfo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="pb100">
+<div class="gate_logo">
+    <div class="gate_box">
+        <div class="fr">
+            <a class="cf" href="javascript:void(0);" onclick="addFavorite(this);">加入收藏</a>
+            <a class="cf mx10" href="/Home/ContactUs" target="_blank">帮助</a>
+            <a class="cf" href="javascript:void(0);">关于</a>
+        </div>
+    </div>
+</div>
+
+<div class="current">
+    <ul>
+        <li class="fl pr c6">
+            <i class="vm d_ilb"></i>
+            <a class="d_ilb" href="/WebHome/Index">首页</a>
+        </li>
+        <li class="fl pr c6">机场代码</li>
+    </ul>
+</div>
+<section class="page_content bs">
+    <div class="w100 h100 bs pr" id="content">
+        <div class="fun bs px10">
+            <ul class="clear">
+                <li class="fl">
+                    <label class="f0 vm">
+                        <span class="fb vm f14">查询方式&nbsp;:&nbsp;</span>
+                        <select class="public_select vm" id="search_select">
+                            <option value="THREE_CODE">三码</option>
+                            <option value="FOUR_CODE">四码</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="fl">
+                    <label class="f0 vm">
+                        <span class="fb vm f14">查找内容&nbsp;:&nbsp;</span>
+                        <input class="public_input vm tt" id="search_text" type="text">
+                    </label>
+                </li>
+                <li class="fl">
+                    <label class="f0 vm">
+                        <a class="public_btn vm" id="search_btn" href="javascript:void(0);">查询</a>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="details bs">
+            <div class="detailsBox w100 h100 oa">
+                <table class="max_table w100" cellpadding="0" cellspacing="0" border="0">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <td class="td_right0 td_bottom0">
+                            <table class="w100" cellspacing="0" cellpadding="0" border="0">
+
+                                <tbody>
+                                <tr>
+                                    <td class="td_right0 td_bottom0">
+                                        <div class="overflow_head" style="left: auto;">
+                                            <table class="min_table w100 tc" cellpadding="0" cellspacing="0" border="0">
+                                                <colgroup>
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                </colgroup>
+                                                <thead>
+                                                <tr class="tr_head">
+                                                    <td>行号</td>
+                                                    <td>四字码</td>
+                                                    <td>三字码</td>
+                                                    <td>协调机场</td>
+                                                    <td>简称</td>
+                                                    <td>英文地名</td>
+                                                    <td>中文地名</td>
+                                                </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="AirportB">
+                                            <table class="table_striped w100 tc" cellpadding="0" cellspacing="0" border="0" id="airportData">
+                                                <colgroup>
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                    <col class="gate_width14">
+                                                </colgroup>
+                                                <tbody>
+                                                <tr><td>1</td><td> OIIE</td><td> IKA</td><td> N</td><td> 玛</td><td> </td><td> 德黑兰/霍梅尼国际机场</td></tr><tr><td>2</td><td> OIII</td><td> THR</td><td> N</td><td> 德</td><td> TEHRAN/MEHRABAD IN</td><td> 德黑兰/梅赫拉巴德</td></tr><tr><td>3</td><td> OIIP</td><td> ABC</td><td> N</td><td> </td><td> OKC</td><td> 卡拉杰</td></tr><tr><td>4</td><td> OJAC</td><td> AMM</td><td> N</td><td> </td><td> </td><td> 阿曼</td></tr><tr><td>5</td><td> OJAI</td><td> AMM</td><td> N</td><td> 约</td><td> AMMAN</td><td> 安曼/阿利娅皇后</td></tr><tr><td>6</td><td> OJAM</td><td> ADJ</td><td> N</td><td> 安</td><td> AMMAN</td><td> 安曼</td></tr><tr><td>7</td><td> OKAD</td><td> </td><td> N</td><td> </td><td> </td><td> 科威特国际机场</td></tr><tr><td>8</td><td> OKBK</td><td> KWI</td><td> N</td><td> 科</td><td> KUWAIT/INTL</td><td> 科威特/国际</td></tr><tr><td>9</td><td> OLBA</td><td> BEY</td><td> N</td><td> 鲁</td><td> BEIRUT/INTL</td><td> 贝鲁特/国际</td></tr><tr><td>10</td><td> OMAA</td><td> AUH</td><td> N</td><td> 扎</td><td> ABUDHBI/INTL</td><td> 阿布扎比/国际</td></tr><tr><td>11</td><td> OMAD</td><td> EEE</td><td> N</td><td> e</td><td> ABU DHABI BATEEN</td><td> 阿布扎比巴挺</td></tr><tr><td>12</td><td> OMAL</td><td> </td><td> N</td><td> </td><td> </td><td> 艾因</td></tr><tr><td>13</td><td> OMDB</td><td> DXB</td><td> N</td><td> 迪</td><td> DUBAI/INTL</td><td> 迪拜/国际</td></tr><tr><td>14</td><td> OMDW</td><td> DWC</td><td> N</td><td> </td><td> MAKTOUN INTERNATIONAL AIRPORT</td><td> 迪拜/世界中心机场</td></tr><tr><td>15</td><td> OMFJ</td><td> </td><td> N</td><td> </td><td> FUJAIRAH</td><td> 富查伊拉</td></tr><tr><td>16</td><td> OMRK</td><td> </td><td> N</td><td> </td><td> RASALKHAIMAH</td><td> 哈伊马角</td></tr><tr><td>17</td><td> OMSJ</td><td> SHJ</td><td> N</td><td> 沙</td><td> SHARJAH/INTL</td><td> 沙迦/国际</td></tr><tr><td>18</td><td> OOMA</td><td> </td><td> N</td><td> 马</td><td> </td><td> 马西拉岛</td></tr><tr><td>19</td><td> OOMS</td><td> MCT</td><td> N</td><td> </td><td> </td><td> 马斯科特</td></tr><tr><td>20</td><td> OOSA</td><td> </td><td> N</td><td> 阿</td><td> SALALAH</td><td> 塞拉莱</td></tr><tr><td>21</td><td> OPFA</td><td> </td><td> N</td><td> 发</td><td> </td><td> 费萨拉巴德</td></tr><tr><td>22</td><td> OPKC</td><td> KHI</td><td> N</td><td> 卡</td><td> KARACHI/INTL</td><td> 卡拉奇/国际</td></tr><tr><td>23</td><td> OPLA</td><td> LHE</td><td> N</td><td> 拉</td><td> </td><td> 拉合尔</td></tr><tr><td>24</td><td> OPMS</td><td> </td><td> N</td><td> 巴</td><td> MINHAS</td><td> 明哈斯</td></tr><tr><td>25</td><td> OPRN</td><td> ISB</td><td> N</td><td> 堡</td><td> ISLAMABAD/CHALALA</td><td> 伊斯兰堡/杰卡拉拉</td></tr><tr><td>26</td><td> ORAA</td><td> </td><td> N</td><td> 伊</td><td> BAGHDAD</td><td> 巴格达</td></tr><tr><td>27</td><td> ORBB</td><td> BGW</td><td> N</td><td> 格</td><td> </td><td> 巴格达</td></tr><tr><td>28</td><td> ORBS</td><td> SDA</td><td> N</td><td> 巴</td><td> BAGHDAD/SADDAM</td><td> 巴格达/萨达姆</td></tr><tr><td>29</td><td> OSDI</td><td> DAM</td><td> N</td><td> 大</td><td> DAMASCUS</td><td> 大马士革</td></tr><tr><td>30</td><td> OTBD</td><td> DOH</td><td> N</td><td> 多</td><td> DOHA</td><td> 多哈/多哈国际机场</td></tr><tr><td>31</td><td> OTBH</td><td> IUD</td><td> N</td><td> 阿</td><td> AL UDEID</td><td> 乌代德空军基地</td></tr><tr><td>32</td><td> OYSN</td><td> SAH</td><td> N</td><td> 萨</td><td> SANAA</td><td> 萨那</td></tr><tr><td>33</td><td> PACD</td><td> </td><td> N</td><td> </td><td> COLDBAY</td><td> 科尔德湾</td></tr><tr><td>34</td><td> PACK</td><td> </td><td> N</td><td> 美</td><td> COLDBAY</td><td> 科尔德湾</td></tr><tr><td>35</td><td> PAED</td><td> </td><td> N</td><td> 安</td><td> </td><td> 安克雷奇</td></tr><tr><td>36</td><td> PAFA</td><td> FAI</td><td> N</td><td> 费</td><td> FAIRBANKS/INTL</td><td> 费尔班克斯/国际</td></tr><tr><td>37</td><td> PAKT</td><td> </td><td> N</td><td> </td><td> KETCHIKAN INTL</td><td> 凯奇坎</td></tr><tr><td>38</td><td> PANC</td><td> ANC</td><td> N</td><td> 雷</td><td> ANCHORAGE/INTL</td><td> 安克雷奇/国际</td></tr><tr><td>39</td><td> OIKB</td><td> BND</td><td> N</td><td> 阿</td><td> </td><td> 阿巴斯港</td></tr><tr><td>40</td><td> PAOM</td><td> </td><td> N</td><td> 美</td><td> NOME</td><td> 诺姆</td></tr></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<script src="jquery-1.7.1.min.js"></script>
+<script>
+
+    var pageUrl ='/WebHome/GetTotalCount';
+    var dateUrl =  '/WebHome/GetAirport';
+    var type = "Airport";
+
+</script>
+<script src="AirportInfo.js"></script>
+
+
+
+
+<div class="layui-layer-move"></div></body>
+
+</html>

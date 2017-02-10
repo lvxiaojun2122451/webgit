@@ -1,0 +1,460 @@
+/*阻止公用样式影响*/
+h2, .h2 {
+    font-size:inherit;
+}
+label{ 
+	font-weight:normal;
+}
+input[type="radio"], input[type="checkbox"]{ 
+	margin-top:0;
+}
+.input-group .form-control{ 
+	line-height:34px;
+	background-color:transparent;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{ 
+	outline: none;
+	outline: none; 
+	outline-offset: 0; 
+}
+/*以上是阻止bootstrap样式*/
+
+.input-group-addon{ 
+	color: #fff;
+    background-color: steelblue;
+    border-color: #285e8e;
+}
+
+html{
+    height:auto;
+    overflow-y:scroll;
+}
+body{
+    height: auto;
+}
+/*阻止公用样式影响*/
+
+.gate_site{
+    height: 36px;
+    line-height: 36px;
+    background: #497598;
+}
+.gate_logo{
+    height: 80px;    
+    background: #33678E;   
+}
+.gate_banner{
+    height: auto;
+    
+}
+.gate_sectionCom{
+    width: 1000px;
+    padding: 0 0 30px;
+    height: auto;
+}
+.gate_contact{
+    height: 230px;
+    border-bottom: solid 1px #fff;
+    background: #33678E;
+}
+.gate_footer{
+    height: 50px;
+    line-height: 50px;
+    background: #33678E;
+}
+.gate_site .gate_box , .gate_logo .gate_box , .gate_contact .gate_box , .gate_footer .gate_box{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+.gate_logo .gate_box{
+    width: 1014px;
+    background: url("logo_min.png") no-repeat 0 center;
+}
+.gate_logo a:hover{
+	color:#fff; 
+	text-decoration:none;
+}
+.gate_sectionCom .gate_left{
+    width: 600px;
+}
+.gate_sectionCom .gate_right{
+    width: 350px;
+}
+.gate_notice{
+    border-bottom: dashed 1px #DDDDDD;
+}
+.gate_notice h2{
+    height: 60px;
+    line-height: 76px;
+}
+.gate_notice h2.first , .gate_notice h2.tow , .gate_notice h2.three{ 
+	background: url("img/svp2.png") no-repeat;
+}  
+.gate_notice h2.first{ 
+	background-position: 0px 31px;
+}
+.gate_notice h2.tow{ 
+	background-position: 0px -28px;
+}
+.gate_notice h2.three{ 
+	background-position: 0px -88px;
+}
+.gate_notice h2 span{
+    color: #33678E;
+    margin-left: 25px;
+}
+.gate_notice h2 a{
+    color: #F5C15A;
+    height: 100%;
+}
+.gate_notice li{
+    height: 30px;
+    line-height: 30px;
+	box-sizing:border-box;
+	padding-left:10px;
+	background:url(img/ico57.png) no-repeat 2px center;
+	font:14px/30px "SimSun","宋体","Arial Narrow",HELVETICA;
+}
+.gate_notice li a{ 
+	color:#000;
+}
+/*重要通知做特殊显示*/
+.gate_notice li a .gate_news , .gate_notice li a .gate_important{ 
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.gate_notice li a .gate_news{
+	background: url(img/ico56.png) no-repeat -57px -100px;
+    margin-left: 10px;
+}
+
+.gate_notice li a .gate_important{ 
+    background: url(img/ico56.png) no-repeat -20px -96px;
+    margin-left: 4px;
+	height:22px;
+}
+/*最新通知做特殊显示*/
+.gate_notice li a:hover{
+    text-decoration: underline;
+    color: #ff8400;
+}
+.gate_notice li span{
+    color: #000;
+}
+.gate_code{
+    margin-top: 6px;
+}
+.gate_code .list{
+    bottom: 0;
+    left: 0;
+}
+.gate_code .list li{
+    width: 25%;
+    height: 50%;
+    float: left;
+}
+.gate_code .list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 170px;
+    background-repeat: no-repeat;
+    background-position:center 24px ;
+}
+.gate_code .list li a:hover{ 
+	text-decoration:none;
+}
+.gate_bg1{
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#50000000,endColorstr=#50000000); 
+}
+.gate_bg2{
+    color: #333;
+    background: rgba(255,255,255,0.5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#50ffffff,endColorstr=#50ffffff); 
+}
+.gate_code .list li .ico1 , .gate_code .list li .ico2 , .gate_code .list li .ico3 , .gate_code .list li .ico4{ 
+	background-image: url("img/svp.png");
+	background-repeat:no-repeat;
+}
+.gate_code .list li .ico1{
+	color:#fff;
+    background-position: 56px -120px;
+}
+.gate_code .list li .ico2{
+	color:#333;
+    background-position: -44px -120px;
+}
+.gate_code .list li .ico3{
+	color:#333;
+    background-position: -143px -120px;
+}
+.gate_code .list li .ico4{
+	color:#fff;
+    background-position: -245px -120px;
+}
+.gate_login{
+    padding-top: 30px;
+}
+.gate_login_t{ 
+	padding-top:0;
+}
+.gate_login li{
+    width: 103px;
+    height: 103px;
+    font-family: "Microsoft YaHei", "微软雅黑", Arial;
+    position: relative;
+}
+.gate_login li div{
+    border: solid 2px #DDDDDD;
+    box-sizing: border-box;
+	padding-top:70px;
+}
+.gate_login li p{
+    height: 100%;
+}
+.gate_login li.first div , .gate_login li.tow div , .gate_login li.three div , .gate_login li.four div , .gate_login li.fire div , .gate_login li.six div{ 
+	background: #379FA0 url("img/svp.png") no-repeat;
+	border-color: #379FA0;
+}
+.gate_login li.first div{
+    background-position: 30px 20px;
+    
+}
+.gate_login li.tow div{
+    background-position: -68px 20px;
+}
+.gate_login li.three div{
+    background-position: -170px 20px;
+}
+.gate_login li.four div{
+    background-position: -268px 20px;
+}
+.gate_login li.fire div{
+    background-position: -374px 20px;
+}
+
+.gate_login li.six div{
+    background-position: -470px 24px;
+}
+
+.gate_login li.active div{
+    border-color: #ff0000;
+}
+.gate_form{
+    margin:20px 0;
+	position:relative;
+}
+.gate_form .form{
+    padding-bottom:30px;
+    /*background: #F4F4F4;*/
+}
+.gate_form .form li{
+    height: 30px;
+    line-height: 30px;
+    padding-top: 17px;
+}
+.gate_form .form li:first-child{
+    padding-top: 25px;
+}
+.gate_form .gate_form_span{
+    width: 97px;
+    text-align: right;
+    height: 30px;
+	font-family:"HELVETICA";
+}
+.gate_form .gate_form_span.gate_form_span_t{
+    letter-spacing: 6px;
+}
+.gate_form .gate_form_span.gate_form_span_t1{ 
+	line-height:16px;
+	position:relative;
+	padding-right:6px;
+}
+.gate_form .gate_form_span.gate_form_span_t1:before{ 
+	content:":";
+	position:absolute;
+	right:0;
+	top:8px;
+}
+.gate_form .gate_form_iptText{
+    width: 214px;
+    height: 28px;
+    border:solid 1px #DDDDDD;
+    text-indent: 10px;
+}
+.gate_form .gate_form_iptText1{
+    width: 105px;
+    height: 28px;
+    border: solid 1px #DDDDDD;
+    text-indent: 10px;
+}
+.gate_form .img{
+    width: 92px;
+    height: 30px;
+    margin-left: 16px;
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+}
+.gate_form .img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.gate_form .gate_form_sub{
+    width: 117px;
+    height: 30px;
+    border-radius: 4px;
+    background: #4484B0;
+    margin-right: 18px;
+}
+.gate_formList{
+    display: none;
+	box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #1990D4;
+	position:relative;
+	overflow:hidden;
+}
+.gate_form:before{
+	content:"";
+	width:100px;
+	height:20px;
+	background:#fff url(img/ico60.png) no-repeat center;
+	position:absolute;
+	z-index:1;
+	display:none;
+}
+.gate_formList_1:before{ 
+	left:2px;
+	display:block;
+	top:-14px;
+}
+.gate_formList_2:before{ 
+	left:123px;
+	display:block;
+	top:-14px;
+}
+.gate_formList_3:before{ 
+	left:247px;
+	display:block;
+	top:-14px;
+}
+.gate_formList_4:before{
+	background:#fff url(img/ico64.png) no-repeat center; 
+	left:2px;
+	display:block;
+	bottom:-10px;
+}
+.gate_formList_5:before{
+	background:#fff url(img/ico64.png) no-repeat center; 
+	left:123px;
+	display:block;
+	bottom:-10px;
+}
+.gate_formList_6:before{ 
+	background:#fff url(img/ico64.png) no-repeat center; 
+	left:247px;
+	display:block;
+	bottom:-10px;
+}
+.gate_map h2{
+    height: 87px;
+    line-height: 100px;
+    color: #3A6B90;
+    font-family: "Microsoft YaHei", "微软雅黑", Arial;
+}
+.linkdot {
+padding-left:10px;
+background:url(img/ico57.png) no-repeat 2px center;
+}
+.gate_footer span{
+    color: #ccc;
+}
+.gate_footer p{
+    color: #ccc;
+}
+.gate_footer a{
+    color: #ccc;
+}
+.gate_footer img{ 
+	margin-top:-4px;
+}
+.gate_contact h2{
+    padding-top: 27px;
+    height: 30px;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    box-sizing: content-box;
+}
+.gate_contact .gate_linear{
+    background: #A2B9CB;
+    width: 20px;
+    height: 2px;
+    margin: 10px 0 22px;
+    box-sizing: content-box;
+}
+.gate_contact .qr{
+    width: 118px;
+    height: 118px;
+    box-sizing: border-box;
+    background: #8BBDE2;
+}
+.gate_contact .qr img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.gate_contact .gate_phone li{
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    box-sizing: content-box;
+}
+.gate_contact .gate_phone li.ico51 , .gate_contact .gate_phone li.ico47 , .gate_contact .gate_phone li.ico49 , .gate_contact .gate_phone li.ico50{ 
+	background: url("img/svp2.png") no-repeat;
+}
+.gate_contact .gate_phone li.ico51{
+    background-position: 0px -178px;
+}
+.gate_contact .gate_phone li.ico47{
+    background-position: 0px -235px;
+}
+.gate_contact .gate_phone li.ico49{
+    background-position: 0px 0px;
+}
+.gate_contact .gate_phone li.ico50{
+    background-position: 0px -291px;
+}
+.validimg
+{
+    margin-left:10px;
+    height:45px;
+    width:93px;
+    cursor:pointer;
+}
+
+/*相关链接*/
+.gate_about{ 
+	width:75px;
+	margin-right:16px;
+	height:150px;
+}
+.gate_about.last_marginRight0{ 
+	margin-right:0;
+}
+.gate_about a{ 
+	color:#0000CC;
+	text-decoration:underline;
+}
+.gate_about a:hover{
+	color:#0000CC; 	
+}
