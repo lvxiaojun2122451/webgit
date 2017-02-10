@@ -27,9 +27,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44536817" vertical-offset="0" max-vertical-offset="3975">
-              <caret line="15" column="150" selection-start-line="15" selection-start-column="150" selection-end-line="15" selection-end-column="150" />
+            <state vertical-scroll-proportion="0.4750594" vertical-offset="0" max-vertical-offset="3700">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -69,8 +70,8 @@
       <file leaf-file-name="gate_index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gate_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.4" vertical-offset="1318" max-vertical-offset="11650">
-              <caret line="64" column="43" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="43" />
+            <state vertical-scroll-proportion="-11.066667" vertical-offset="1418" max-vertical-offset="11625">
+              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -102,10 +103,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/gate_index.css" />
         <option value="$PROJECT_DIR$/base.css" />
         <option value="$PROJECT_DIR$/AirportInfo.js" />
         <option value="$PROJECT_DIR$/AirportInfo.css" />
+        <option value="$PROJECT_DIR$/gate_index.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -279,14 +280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gate_index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.4" vertical-offset="1318" max-vertical-offset="11650">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18875">
@@ -311,11 +304,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gate_index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.066667" vertical-offset="1418" max-vertical-offset="11625">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44536817" vertical-offset="0" max-vertical-offset="3975">
-          <caret line="15" column="150" selection-start-line="15" selection-start-column="150" selection-end-line="15" selection-end-column="150" />
+        <state vertical-scroll-proportion="0.4750594" vertical-offset="0" max-vertical-offset="3700">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

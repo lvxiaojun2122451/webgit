@@ -63,13 +63,12 @@ body{
     background: #33678E;
 }
 .gate_site .gate_box , .gate_logo .gate_box , .gate_contact .gate_box , .gate_footer .gate_box{
-    width: 1000px;
     height: 100%;
     margin: 0 auto;
 }
 .gate_logo .gate_box{
-    width: 1014px;
     background: url("logo_min.png") no-repeat 0 center;
+    background-size:60% auto ;
 }
 .gate_logo a:hover{
 	color:#fff; 
