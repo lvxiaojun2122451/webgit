@@ -83,6 +83,7 @@
 .AirportFix1{ 
 	position:fixed;
 	top:0px;
+    width:100%;
 }
 .AirportFix2{ 
 	position:fixed;

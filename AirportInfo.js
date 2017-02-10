@@ -69,7 +69,7 @@ $(function(){
 				//this.ajaxPage();
 				
 				//初始化滚动加载数据
-				//this.scroll();
+				this.scroll();
 			    
 				//初始化点击事件
 				this.clicks();
